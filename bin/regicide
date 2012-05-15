@@ -1,0 +1,10 @@
+require "java"
+$CLASSPATH << File.expand_path("../ext/jikesrvm", File.dirname(__FILE__))
+$CLASSPATH << File.expand_path("../lib/jruby", File.dirname(__FILE__))
+$CLASSPATH << File.expand_path("../build.eclipse", File.dirname(__FILE__))
+$CLASSPATH << "/home/nari/source/jikesrvm-3.1.2/eclipse/bin/"
+java.lang.System.set_property("mmtk.hostjvm",
+                              "org.mmtk.regicide.vm.Factory")
+entry_point = ARGV.shift
+$CLASSPATH << File.dirname(entry_point)
+org.mmtk.regicide.Regicide.entry(entry_point, ARGV.to_java(:string))

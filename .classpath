@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="lib"/>
+	<classpathentry kind="lib" path="ext/jikesrvm/options/options.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="ext/jikesrvm/vmmagic/vmmagic-stub.jar"/>
+	<classpathentry kind="lib" path="/home/nari/.rvm/src/jruby-1.6.7/lib/jruby.jar"/>
+	<classpathentry kind="lib" path="/JikesRVM x86_64-linux production/eclipse/bin"/>
+	<classpathentry kind="output" path="build.eclipse"/>
+</classpath>
